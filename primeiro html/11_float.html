@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura Base html5</title>
+        <meta name="author" content="Lucas">
+        <meta name="description" content="Estrutura basica html5">
+        <meta name="Keywords" content="html5, tecnologia">
+    </head>
+        <style>
+            #containder{
+                width: 80%;
+                padding: 15px;
+                background: #ccc;
+                overflow: auto;
+            }
+
+            #containder div{
+                width: 80px;
+                height: 50px;
+                border: 2px solid red;
+                margin: 5px;
+            }
+
+            #div1{
+                float: left;
+            }
+
+            #div2{
+                float: left;
+            }
+
+            #div3{
+                float: left;
+            }
+
+            header{
+                background: #ccc;
+                height: 50px;
+            }
+
+            nav{
+                width: 25%;
+                height: 180px;
+                background: orange;
+                float: left;
+            }
+
+            main{
+                width: 75%;
+                height: 100px;
+                background: yellow;
+                float: right;
+            }
+
+            footer{
+                height: 50px;
+                background: blue;
+                clear: both;
+            }
+
+        </style>
+    <body>
+        <h1>Float</h1>
+        <div id="containder">
+            <div id="div1">div1</div>
+            <div id="div2">div2</div>
+            <div id="div3">div3</div>            
+        </div>
+
+        <hr>
+
+        <header>header</header>
+        <nav>nav</nav>
+        <main>main</main>
+        <footer>footer</footer>
+    </body>
+</html>

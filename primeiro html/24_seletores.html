@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura Base html5</title>
+        <meta name="author" content="Lucas Santos">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="Keywords" content="html5, tecnologia">
+        <style>
+            article:nth-child(1) a{
+                color: red;
+            }
+            
+            article:nth-child(3) > p{ /* ">" = todo "p" filho direto de "article". ":nth-child(3)" 3º filho de "body" */
+                color: red;
+            }
+
+            article:nth-child(5) h3 + p{ /* "+" = todo "p" imediatamente após um h3 */
+                color: green;
+            }
+
+            article:nth-child(7) h3 ~ p{ /* "~" = todos os "p" imediatamente após um h3 */
+                color: orange;
+            }
+
+            .destaque{
+                background: yellow;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <article>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>        
+
+        <hr>
+
+        <article>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>        
+
+        <hr>
+
+        <article>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>        
+    
+        <hr>
+
+        <article>
+            <p>Paragrafo antes do titulo</p>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>        
+    
+        <hr>
+
+        <article class="destaque">
+            <p>Paragrafo antes do titulo</p>
+            <h3>Titulo</h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>        
+    
+    </body>
+</html>

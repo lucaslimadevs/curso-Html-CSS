@@ -1,0 +1,116 @@
+body{
+    font-family: arial, sans-serif;
+    background: #ccc;
+    margin: 0;
+}
+
+.hero{
+    background-image: url(../imagens/bg-3.jpg);
+    height: 500px;
+    background-position: right center;
+    background-size: cover;
+    border: 1px solid transparent;
+}
+
+.hero nav ul{
+    text-align: right;
+    margin: 15px 25px 0 0;
+}
+
+.hero ul li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid white;
+    margin-left: 3px;
+}
+
+.hero nav a{
+    padding: 10px;
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero nav a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 150px;    
+}
+
+.hero-content p{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}    
+
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 3px #333;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+.content-section{
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    overflow: auto; /*ajustar float, altura do objeto*/
+}
+
+.card{
+    width: 32%;
+    float: left; 
+    box-sizing: border-box;
+}
+
+.card-01, .card-02{
+    margin-right: 2%;
+}
+
+.card img{
+    width: 100%;
+    display: block; /*Tirar espaço do texto*/
+}
+
+.card p{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    margin: 0;    
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.content-section article h2{
+    background-color: #ccc;
+    margin-top: 0;
+    padding: 7px;
+    border-bottom: rgb(90, 90, 90) 3px solid;
+}
+
+footer{
+    margin-top: 15px;
+    padding-top: 12px;
+    padding-bottom: 5px; 
+    background-color: #333;
+    opacity: 0.8;
+}
+
+.rodape{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+}

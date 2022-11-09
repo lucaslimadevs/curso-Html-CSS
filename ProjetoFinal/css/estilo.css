@@ -1,0 +1,198 @@
+.header-content{
+    position: fixed;
+    display: inline-block;
+}
+
+.header-container{
+    margin-bottom: 0;
+}
+
+
+.container{
+    margin-top: 76px;
+}
+
+.nav-link-tab{
+    color: black;
+}
+
+.nomePefil{
+    text-align: center;
+    margin: 0;
+}
+
+.iconeUser{
+    margin: 0;
+    text-align: center;
+}
+
+.dropdown-item{
+    color: black;
+}
+
+.nav-link-menu{
+    color: white;
+    transition: ease 0.5s color;
+}
+
+.nav-link-menu:hover{
+    color: #ccc;
+}
+
+.btn-modal{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.header-content-nav{
+    background-image: url(../images/bgslider.jpg);
+    height: 75px;    
+    width: 100%;
+    background-color: blue;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header-image-logo{
+    margin: 10px 0 0 120px;
+    max-width: 12%;
+    clear: both;
+}
+
+.dropdown-item{
+    color: black;
+}
+
+.menu-nav{
+    float: right;
+}
+
+.menu-nav li{
+    list-style: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    transition: 0.5s ease opacity;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+#iconePerfil{
+    border: none;   
+    margin: 6px 0 0 0;
+}
+
+.menu-nav li:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+
+.menu-nav li:last-child{
+    margin-right: 60px;
+}
+
+.dropdown-item{
+    color: black; 
+}
+
+.nav-btn-helpdesk{
+    color: white;
+    transition: ease 0.5s color;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav-btn-helpdesk:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.nav-btn-sair{
+    color: white;
+    transition: ease 0.5s color;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+#btn-sair{
+    border: none;
+}
+
+.nav-btn-sair:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.title-h1{
+    font-size: 23px;
+    padding: 10px 0; 
+    border-bottom: 1px solid black; 
+}
+
+.required:after {
+    content:" *"; 
+    color: red;
+}
+
+.container{
+    margin-bottom: 30px;
+}
+
+.form-grauInstru{
+    margin-bottom: 20px;
+}
+
+.form-buttons{
+    float: right;
+    margin-bottom: 30px;
+}
+
+.btn-salvar{
+    margin-right: 15px;
+    padding: 0.375rem 3rem;
+}
+
+.btn-light{
+    background-color: #ccc;
+}
+
+.btn-success, :not(){
+    padding: 0.375rem 3.5rem
+}
+
+.btn-outline-secondary{
+    background-color: #ccc;
+    padding: 0.375rem 0.75rem;
+}
+
+.nav-tabs{
+    margin-bottom: 20px;
+}
+
+.opcaoSexo{
+    margin: 10px 0 15px;
+}
+
+.form-check-label{
+    margin-bottom: 10px;
+}
+
+.footer-content{
+    background-image: url(/images/bgslider.jpg);
+    padding: 17px;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.copyright{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.lbtipoEmp{
+    margin-top: 10px;
+}

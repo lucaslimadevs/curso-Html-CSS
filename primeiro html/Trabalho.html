@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Sobre Mim</title>
+        <meta name="author" content="Lucas Santos">
+        <meta name="description" content="Atividade Google Classrom">
+        <meta name="Keywords" content="html5, Sobre mim, CSS">
+        <style> 
+            body{
+                font-family: sans-serif;
+                margin: auto; /* alinha o conteudo da pagina na horizontal */
+                margin: 40px 100px; /* Definindo margens cima e baixo(40px), esquerda e direita(100px) */
+                background-color: aliceblue;
+            }
+
+            h1{
+                font-size: 50px;
+                border-bottom: blue 5px solid; /* definindo propriedades da borda em conjunto (Cor, tamanho e tipo) */
+                background-color: rgb(179, 179, 255); 
+                text-align: center;
+            }
+
+            h2{
+                border-bottom: blue 5px solid; /* definindo propriedades da borda em conjunto (Cor, tamanho e tipo) */
+                background-color: rgb(179, 179, 255);
+                padding: 7px; /* Espaçamento das bordas */ 
+            }
+
+            h3{
+                border-bottom: blue 3px solid; /* definindo propriedades da borda em conjunto (Cor, tamanho e tipo) */
+            }
+
+            #Experiencias{
+                width: 118px;
+            }
+
+            #Extras{
+                width: 63px;
+            }
+
+            #redessociais{
+                text-align: center;
+            }
+            
+            p{
+                background-color: aliceblue;
+            }
+
+            a:hover{
+                background-color: chocolate; /* Efeito de passar o mouse sobre */
+            }
+
+            #listarede{
+                text-align: center;
+                padding-left: 0;
+            }
+
+            .rede{
+                display: inline;
+                margin: 0px 20px;
+                font-size: 20px;
+
+                
+            }  
+
+            #link{
+                text-decoration: none; /* retirar linha link */
+            }
+
+            .filmes{
+                font-size: 18px;
+            }
+
+            .rede a{
+                text-decoration: none; /* retirar linha link */
+            }
+            
+            table {
+                border-collapse: collapse; /* retirar linhas verticais tabela */
+                width: 100%;
+            }
+
+            th, td {
+                text-align: left;
+                padding: 8px;
+            }
+
+             tr:nth-child(even) {background-color: rgb(218, 218, 255);} /* Montar estilização tabela */
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Lucas Santos</h1>
+        <p>Brasileiro, solteiro, 21 anos.</p>
+        <h2>Formação</h2>
+        <p>Cursando <b>Ciência da computação</b> na Faculdade de Ciências Aplicadas e Sociais de Petrolina (<a href="http://www.facape.br" target="_blank" id="link" ><b>FACAPE</b></a>) </p>
+        <p>6/8 Período.</p>
+        <p>Nivel de Inglês: Básico (Escola Cultura inglesa).</p>  
+        <h3 id="Experiencias" >Experiências:</h3>
+        <p>Programador Trainee à 1 Ano (Info Rio Sistemas) <a href="http://www.inforio.com.br" target="_blank">www.inforio.com.br</a>.</p>
+        <p>Desenvolvimento de aplicações desktop com DelphiXE5 modelo multicamadas DataSnap usando Interbase, FireBird 3.0.</p>
+        <h3 id="Extras">Extras:</h3>
+        <ul>
+            <li>Curso Introdução ao HTML (DevMedia <a href="https://www.devmedia.com.br" target="_blank">https://www.devmedia.com.br</a>)</li>
+            <li>Curso Introdução ao CSS na prática (DevMedia <a href="https://www.devmedia.com.br" target="_blank">https://www.devmedia.com.br</a>)</li>              
+        </ul>
+        <h2>Hobbies</h2>
+            <ul>
+                <li>Gosto de sair para tomar cerveja com os amigos.</li>
+                <li>Toco ukulele nas horas vagas.</li>
+                <li>Gosto de praticar exercícios como corrida.</li>
+            </ul>
+        <h2>Filmes Favoritos</h2>
+
+        <table>
+            <tr class="filmes" >
+                <th>Filmes</th>
+                <th>Nota</th>
+                <th>Ano</th>
+                <th>Trailer</th>
+            </tr>
+
+            <tr class="filmes" >
+                <td>Interestelar</td>
+                <td>10.0</td>
+                <td>2014</td>
+                <td><a href="https://www.youtube.com/watch?v=BYUZhddDbdc" target="_blank">Link</a></td>
+            </tr>
+
+            <tr class="filmes" >
+                <td>O Último Samurai</td>
+                <td>10.0</td> 
+                <td>2003</td>               
+                <td><a href="https://www.youtube.com/watch?v=RVFV_s6lli4" target="_blank">Link</a></td>
+            </tr>
+
+            <tr class="filmes" >
+                <td>Indiana Jones e a Ùltima Cruzada</td>
+                <td>10.0</td>
+                <td>1989</td>                
+                <td><a href="https://www.youtube.com/watch?v=96YggAgcbiA&t=10s" target="_blank">Link</a></td>
+            </tr>
+
+            <tr class="filmes" >
+                <td>Bastardos Inglórios</td>
+                <td>10.0</td>
+                <td>2009</td>                
+                <td><a href="https://www.youtube.com/watch?v=w1O5LThfp7w" target="_blank">Link</a></td>
+            </tr>
+
+        </table>
+
+        <h3 id="redessociais">Redes Sociais</h3>
+        <ul id="listarede">
+            <li class="rede" ><a href="https://instagram.com/lucas_sgl?igshid=4vacjfai16ki" target="_blank">Instagram</a> </li>
+            <li class="rede" ><a href="https://www.facebook.com/profile.php?id=100003551065610" target="_blank">Facebook</a></li>
+            <li class="rede" ><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5587988694840" target="_blank">Whatsapp</a></li>
+        </ul>
+
+    
+    </body>
+</html>

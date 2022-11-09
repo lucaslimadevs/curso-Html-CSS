@@ -1,0 +1,98 @@
+body{
+    font-family: sans-serif;
+    color: brown;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content{
+    background-image: url(../imagens/beachshowcase.jpg);
+    height: 400px;
+    background-position: right bottom; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+
+.titulo{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.button-read{
+    border: 1px solid brown;
+    padding: 8px;
+    border-radius: 5px;
+    color: brown;
+    text-decoration: brown;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+.button-read:hover{
+    color: white;
+    background-color: brown;
+}
+
+.legend{
+    font-size: 0.9em;
+}
+
+.texto1{
+    background: brown;
+    color: white;
+    font-size: 0.9em;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.texto2{
+    background: white;
+    color: brown;
+    font-size: 0.9em;
+    padding: 20px;
+    text-align: center;
+}
+
+textocol-1{
+    float: left;
+    display: block;
+}
+
+textocol-2{
+    float: left;
+}
+
+textocol-2{
+    float: left;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+.textoCol li{
+    
+    list-style: none;
+    display: inline-block;
+    width: 33%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.textoCol-1{
+    background: brown;
+    color: white;
+}
+
+.textoCol-3{
+    background: brown;
+    color: white;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura Base html5</title>
+        <meta name="author" content="Lucas Santos">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="Keywords" content="html5, tecnologia">
+        <style>
+
+            html, body{
+                height: 100%;
+            }
+
+            body{
+                background-image: linear-gradient(to right top, rgba(255, 0, 0, 0.637), rgba(0, 0, 255, 0.349)), 
+                url(imagens/bg.jpg);
+                background-size: auto, 100% 100%;
+            }
+
+            #radios{
+                background: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+
+                border-radius: 50px 100px / 100px 50px; 
+
+                box-shadow: -10px -10px 10px #999, 10px 10px 10px red;; /* delocamento da sombra(10px), valores positivos vão para direita*/
+                         /*  x,  y, esfumaçamento e cor  */                
+            }
+
+            h1{
+                font-family: sans-serif;
+                font-size: 50px;
+                text-align: center;
+                text-shadow: -1px 1px 0 #5d5d5d,
+                -2px 2px 0 #727272, -3px 3px 0 #868686,
+                -4px 4px 0 #a3a3a3;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>CSS efeitos</h1>
+        
+        <div id="radios"></div>        
+
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura Base html5</title>
+        <meta name="author" content="Lucas">
+        <meta name="description" content="Atividade Sobre mim">
+        <meta name="Keywords" content="html5, CSS, tecnologia">
+        <style>
+            body{
+                margin: auto;
+                font-family: sans-serif;
+                text-align: center;
+                background-color: rgb(121, 208, 248);
+                color: white
+                
+            }
+            
+            #foto-perfil{
+                width: 150px;
+                border: 7px rgb(74, 129, 248) inset;
+                margin-top: 80px;
+            }
+
+            h1{
+                margin-top: 0px;
+            }
+
+            h2{
+                text-align: left;
+                margin: 40px 5px
+                
+            }
+
+            h2 ul li{
+                color: white;
+            }
+
+            h2 ul li::before{
+                margin-right: 10px;                
+            }
+
+            section ul{
+                padding-left: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            
+            section ul li{                
+                display: inline-block;
+            }
+
+            section ul li a:hover{
+                color: red;
+            }
+
+            section ul li a img{
+                border-style: none;
+                width: 50px;                
+            }
+
+            #instagram{
+                width: 57px;
+                opacity: 1;
+                display: block;
+                transition: .3s ease;
+            }
+
+            #instagram:hover {
+                opacity: 0.3;
+            }
+
+            /* #instagram:hover{
+                border-image-width: 0%;
+                
+            } */
+
+        </style>
+    </head>
+
+    <body>
+
+        <img src="imagens/Foto.jpg" alt="Foto de Lucas" id="foto-perfil">
+        <section>
+            <ul>
+                <li> <a href="https://instagram.com/lucas_sgl?igshid=4vacjfai16ki" target="_blank"><img src="imagens/instagram-1.png" alt="" id="instagram"></a> </li>
+                <li> <a href="https://www.facebook.com/profile.php?id=100003551065610" target="_blank"><img src="imagens/facebook2.png" alt=""></a></li>
+                <li> <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5587988694840" target="_blank"><img src="imagens/whatsapp2.png" alt=""></a></li>
+            </ul>
+        </section>
+
+        <h1>Lucas Santos</h1>
+        <h2> 
+            <ul>
+                <li>Sobre mim:</li>
+            </ul>  
+        </h2>
+
+
+    </body>
+</html>

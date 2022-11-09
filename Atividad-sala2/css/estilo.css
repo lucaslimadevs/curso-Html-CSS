@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos-under{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos-under li{
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.navigation{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;    
+}
+
+.navigation li{
+    display: inline;    
+}
+
+.navigation p{
+    margin-bottom: 0;
+}
+
+.text-nav{
+    display: inline-block;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+
+#forme-section{
+    width: 370px;
+    margin: 0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    background-color: white;
+}
+
+.titulo-form{
+    text-align: center;
+    font-size: 25px;
+}
+
+.titulo-form:nth-child(1){
+    margin-bottom: 2px;
+}
+
+.titulo-form:nth-child(2){
+    margin-bottom: 20px;
+}
+
+.button-create{
+    float: right;
+}
+
+.legenda-titulo{
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.legenda-titulo:nth-child(4){
+    margin-bottom: 15px;
+}
+
+.phone-legend{
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: rgb(117, 117, 117);
+}
+
+.form-number{
+    margin: 0;
+}

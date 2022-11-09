@@ -1,0 +1,5 @@
+git add "." or <Arquivo>   // "." = tudo 
+git commit -m "mensagem"   //comando faz preparar automaticamente os arquivos que foram modificados.
+git push origin master     //push
+git restore <arquivo>      //to discard changes in working directory
+git add/rm <arquivo>       //to update what will be committed

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro cliente</title>
+    <meta name="author" content="Lucas Santos">
+    <meta name="description" content="Trabalho de fromulario usando bootstrap">
+    <meta name="Keywords" content="html5, tecnologia, bootstrap">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="header-content-nav  fixed-top">
+                <a href="index.html">
+                    <img src="images/logo.png" class="header-image-logo" alt="Logo Info Rio">
+                </a>
+
+                <ul class="menu-nav">
+                    <li>
+                        <a class="nav-link-menu nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Menu</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Cadastro</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Movimento</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cáculo</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Atualização</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Gráfico</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Relatório</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link-menu nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Parâmetros</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Cadastro</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Contas a receber</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Contas a pagar</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Faturamento</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Escrita fiscal</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link-menu nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Contato</a>
+                        <div class="dropdown-menu">
+                            <form class="px-4 py-3">
+                                <div class="form-group">
+                                    <label for="emailDropdownForm">Email:</label>
+                                    <input type="email" class="form-control" id="emailDropdownForm"
+                                        placeholder="SeuEmail@examplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="DropdownFormComentario">Comentario:</label>
+                                    <textarea class="form-control" name="DropdownFormComentario" id="DropdownFormComentario" 
+                                    cols="10" rows="5" placeholder="envie seu comentario ou duvida!"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-btn-helpdesk">Helpdesk</a></li>
+                    <li id="iconePerfil">
+                        <p class="iconeUser"><i class="fas fa-users"></i></p> 
+                        <p class="nomePefil">Lucas Santos</p>
+                    </li>
+                    <li id="btn-sair"><a href="#" class="nav-btn-sair">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <main class="main-content">
+
+            <h1 class="display-4 title-h1"><a href="#">Cadastros</a>/<a href="#">Cliente</a>/</a></h1>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link-tab nav-link active" id="geral-tab" data-toggle="tab" href="#geral" role="tab"
+                        aria-controls="geral" aria-selected="true">Geral</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-tab nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">Dados Pessoais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-tab nav-link" id="dadosProf-tab" data-toggle="tab" href="#dadosProf" role="tab"
+                        aria-controls="dadosProf" aria-selected="false">Dados Profissionais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-tab nav-link" id="endereco-tab" data-toggle="tab" href="#endereco" role="tab"
+                        aria-controls="endereco" aria-selected="false">Endereco</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-tab nav-link" id="outros-tab" data-toggle="tab" href="#outros" role="tab"
+                        aria-controls="outros" aria-selected="false">Outros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-tab nav-link" id="carteira-tab" data-toggle="tab" href="#carteira" role="tab"
+                        aria-controls="carteira" aria-selected="false">Carteira</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="geral" role="tabpanel" aria-labelledby="geral-tab">
+                    <!-- Aba Geral -->
+                    Form geral...
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <!-- Aba Dados Pessoais -->
+                    <form action="#" method="POST" class="needs-validation" novalidate>
+
+                        <div class="form-group">
+                            <label class="required" for="nomeMae">Nome da mãe:</label>
+                            <input type="text" class="form-control" name="nomeMae" id="nomeMae" alt="Nome completo mãe"
+                                placeholder="Nome completo" required>
+                            <div class="invalid-feedback">
+                                Por favor informe o campo
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nomePai">Nome do pai:</label>
+                            <input type="text" class="form-control" name="nomePai" alt="Nome completo pai"
+                                placeholder="Nome completo">
+                        </div>
+
+                        <div class="opcaoSexo">
+                            <label class="required">Sexo:</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="masculino" value="M" name="sexo"
+                                    alt="opção masculino" checked>
+                                <label class="form-check-label" for="masculino">
+                                    Masculino
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="feminino" value="F" name="sexo"
+                                    alt="opção feminino">
+                                <label class="form-check-label" for="feminino">
+                                    Feminino
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="required" for="dataNasc" class="label">Data Nascimento:</label>
+                            <input type="text" class="form-control js-date" name="dataNasc" alt="Data nascimento"
+                                placeholder="Ex.:00/00/0000" required>
+                            <div class="invalid-feedback">
+                                Por favor informe o campo
+                            </div>
+                        </div>
+
+                        <label class="required" for="cidade">Cidade/nascimento:</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade"
+                                aria-describedby="button-addon2" required>
+                            <div class="input-group-append">
+                                <button class="btn-modal btn btn-outline-secondary" data-toggle="modal"
+                                    data-target="#modalCidade" type="button" id="button-addon2">?</button>
+                                <div class="invalid-feedback">
+                                    Por favor informe o campo
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalCidade" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Selecione a cidade</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <label for="PesquisarCid">Cidade/nascimento:</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="PesquisarCid"
+                                                    name="PesquisarCid" placeholder="Pesquisar..."
+                                                    aria-describedby="button-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        id="button-addon2">Buscar</button>
+                                                </div>
+                                            </div>
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nome</th>
+                                                        <th>UF</th>
+                                                        <th>Sigla País</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tfoot>
+                                                </tfoot>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Petrolina</td>
+                                                        <td>PE</td>
+                                                        <td>BRA</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>juazeiro</td>
+                                                        <td>BA</td>
+                                                        <td>BRA</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Recife</td>
+                                                        <td>PE</td>
+                                                        <td>BRA</td>
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Cancelar</button>
+                                            <button type="button" class="btn btn-primary">Selecionar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <legend>Identidade(RG)</legend>
+
+                            <div class="form-row">
+                                <div class="col-7">
+                                    <label class="required" for="numero">Número:</label>
+                                    <input type="text" id="numero" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Por favor informe o campo
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <label class="required" for="orgaoExped">Orgão de expedição:</label>
+                                    <input type="text" id="orgaoExped" class="form-control" placeholder="Ex.:SSP-BA"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Por favor informe o campo
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <label class="required" for="expedicaoData">Data expedição:</label>
+                                    <input type="text" id="expedicaoData" placeholder="Ex.:00/00/0000"
+                                        class="form-control js-date" required>
+                                    <div class="invalid-feedback">
+                                        Por favor informe o campo
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                        <label for="estadoCivil" class="required">Estado civil:</label>
+                        <select class="form-control" name="estadoCivil" id="estadoCivil" alt="Estado civil" required>
+                            <option value="">Selecione...</option>
+                            <option value="0">Casado(a)</option>
+                            <option value="1">Separado(a)</option>
+                            <option value="2">Viúvo(a)</option>
+                            <option value="3">Solteiro(a)</option>
+                            <option value="4">Divorciado(a)</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor informe o campo
+                        </div>
+
+
+                        <fieldset>
+                            <legend>Cônjugue</legend>
+                            <div class="form-group">
+                                <label for="nomeConju" class="label">Nome cônjugue:</label>
+                                <input type="text" class="form-control" name="nomeConju" alt="nome cônjugue"
+                                    placeholder="Nome completo">
+                            </div>
+
+                            <div class="form-row">
+                                <div class=".col-8">
+                                    <label for="CPFconju">CPF:</label>
+                                    <input type="text" id="CPFconju" class="form-control CPF"
+                                        placeholder="Ex.:999.999.999-99">
+                                </div>
+
+                                <div class="col">
+                                    <label for="identidadeConju">identidade:</label>
+                                    <input type="text" id="identidadeConju" class="form-control">
+                                </div>
+
+                                <div class="col">
+                                    <label for="orgaoConju">Orgão de expedição:</label>
+                                    <input type="text" id="orgaoConju" class="form-control" placeholder="Ex.:SSP-BA">
+                                </div>
+                                <div class="col">
+                                    <label for="dataExpconju">Data expedição:</label>
+                                    <input type="text" id="dataExpconju" class="form-control js-date"
+                                        placeholder="Ex.:00/00/0000">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regime" class="required">Regime:</label>
+                                <select class="form-control" name="regime" id="regime" alt="Regime civil" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="0">Comunhão total de bens</option>
+                                    <option value="1">Comunhão parcial de bens</option>
+                                    <option value="2">Separação de bens</option>
+                                    <option value="3">Sem regime</option>
+                                    <option value="4">União estável</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor informe o campo
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                        <label class="lbtipoEmp required">Tipo de emprego:</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="formal" value="formal" name="tipoEmprego"
+                                alt="opção formal" checked>
+                            <label class="form-check-label" for="formal">
+                                Formal
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="informal" value="informal"
+                                name="tipoEmprego" alt="opção informal">
+                            <label class="form-check-label" for="informal">
+                                Informal
+                            </label>
+                        </div>
+
+                        <label class="required" for="grauInstru">Grau de instrução:</label>
+                        <div class="form-grauInstru">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="grauInstru" name="grauInstru"
+                                    placeholder="Grau de instrução" aria-describedby="button-addon2" required>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" data-toggle="modal"
+                                        data-target="#modalGrauInstru" type="button" id="button-addon2">?</button>
+                                    <div class="invalid-feedback">
+                                        Por favor informe o campo
+                                    </div>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalGrauInstru" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Selecione o Grau de
+                                                    instrução
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label for="PesquisarGrauInstru">Grau instrução:</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="PesquisarGrauInstru"
+                                                        name="PesquisarGrauInstru" placeholder="Pesquisar..."
+                                                        aria-describedby="button-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-secondary" type="button"
+                                                            id="button-addon2">Buscar</button>
+                                                    </div>
+                                                </div>
+
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Descrição</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tfoot>
+                                                    </tfoot>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Analfabeto</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Ensino fundamental incompleto</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Ensino fundamental completo</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>Ensino médio incompleto</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>Ensino médio completo</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-primary">Selecionar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input class="btn btn-light form-buttons form-buttons-cancel" type="reset"
+                            alt="Cancelar formulario" name="cancelar" value="Cancelar">
+                        <input class="btn-salvar btn-success btn form-buttons " type="submit" alt=""
+                            name="Salvar formulario" value="Salvar">
+
+                    </form>
+                </div> <!-- Fim da Aba Dados Pessoais -->
+
+                <div class="tab-pane fade" id="dadosProf" role="tabpanel" aria-labelledby="dadosProf-tab">
+                    <!-- Aba Dados Profissionais -->
+                    Form dados profissionais...
+                </div>
+
+                <div class="tab-pane fade" id="endereco" role="tabpanel" aria-labelledby="endereco-tab">
+                    <!-- Aba Dados Profissionais -->
+                    Form endereço...
+                </div>
+
+                <div class="tab-pane fade" id="outros" role="tabpanel" aria-labelledby="outros-tab">
+                    <!-- Aba Dados Profissionais -->
+                    Form outros...
+                </div>
+
+                <div class="tab-pane fade" id="carteira" role="tabpanel" aria-labelledby="carteira-tab">
+                    <!-- Aba Dados Profissionais -->
+                    Form carteira...
+                </div>
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+    <footer class="footer-content">
+        <p class="copyright">Copyright &copy; http://www.inforio.com.br</p>
+    </footer>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+
+
+<script>
+
+    //Bootstrap
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.js-date').mask('99/99/9999');
+        $('.time').mask('00:00:00');
+        $('.date_time').mask('99/99/9999 00:00:00');
+        $('.cep').mask('99999-999');
+        $('.phone').mask('9999-9999');
+        $('.phone_with_ddd').mask('(99) 9999-9999');
+        $('.phone_us').mask('(999) 999-9999');
+        $('.mixed').mask('AAA 000-S0S');
+        $('.CPF').mask('999.999.999-99');
+        // $('.RG').mask('99.999.999-9');
+    });
+</script>
+
+</html>

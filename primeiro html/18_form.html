@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura Base html5</title>
+        <meta name="author" content="Lucas Santos">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="Keywords" content="html5, tecnologia">
+
+    </head>
+
+    <body>
+        <h1>Exemplo de fromulario</h1>
+
+        <!-- GET manda as informações pela url -->
+        <!-- POST manda as informações junto com a 
+             requisição e de forma segura -->
+        <form action="#" method="POST" class="formlogin">
+
+            <fieldset>
+
+                <legend>Dados pessoais</legend>
+
+                <label for="">Nome</label>
+                <input type="text" placeholder="digite seu nome" autofocus>
+
+                <br>
+                <label for="">Email:</label>
+                <input type="email" maxlength="3" placeholder="digite um email valido" required> <!-- required torna o campo obrigatorio-->
+
+                <br>
+                <label for="">numero de filhos:</label>
+                <input type="number" min="0" max="1000" step="0.5"> <!-- input number so aceita numeros e os atributos "min" e "max" determinam seu valor maximo e minimo -->
+
+                <br>
+                <label for="">nascimento:</label>
+                <input type="date" min="2019-01-01" max="2021-01-01">
+
+                <br>
+                <p>Sexo:</p>
+                
+                <label>
+                    <input type="radio" name="sexo" value="M" checked>
+                    Masculino
+                </label>
+                
+                <label>
+                    <input type="radio" name="sexo" value="F">
+                    Feminino
+                </label>           
+                
+                <input type="hidden" name="expira" value="2019-08-18"> <!-- dado escondido na tela -->  
+                
+                <br>
+                <label>Estado</label>
+                <select name="estado">
+                    <option value="0">Selecione</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="BA">Bahia</option>
+                    <option value="PB">Paraíba</option>   
+                    <option value="MG">Minas Gerais</option>                                     
+                </select>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Área de interesse</legend>
+
+                <label>
+                    <input type="checkbox" name="html" value="html">
+                    html
+                </label>
+
+                <label>
+                    <input type="checkbox" name="css" value="css">
+                    css
+                </label>
+
+                <label>
+                    <input type="checkbox" name="JS" value="JS">
+                    JavaScript
+                </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+
+                <textarea style="resize: none" name="msg" id="" cols="50" rows="7">
+                </textarea>
+
+                <br>
+                <textarea style="resize: none" name="msg" id="" cols="50" rows="7" readonly>Aqui entra o texto do contrato que precisa ser aceito Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </textarea> <!-- readonly torna o input somente leitura -->
+
+                <br>
+                <label><input type="checkbox">Li e aceito</label>
+
+                <br>
+                <input type="range" min="0" max="10" step="2">
+                
+                <br>
+                <input type="time">
+                
+                <br>
+                <input type="color">
+
+                <br><br>
+                <select size="5" multiple> <!-- "multiple" permite selecionar varias opções -->
+                    <option>opção 1</option>
+                    <option>opção 2</option>
+                    <option>opção 3</option>
+                    <option>opção 4</option>
+                    <option>opção 5</option>
+                    <option>opção 6</option>
+                    <option>opção 7</option>
+                    <option>opção 8</option>
+                    <option>opção 9</option>
+                    <option>opção 10</option>
+                </select>
+                
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Mandar"> <!-- "submit" envia o formulario -->
+            <input type="button" value="button"> <!-- "button" tratar com javaScript -->
+            <input type="reset" value="reset">  <!-- "reset" reseta(limpa) os campos para forma original-->
+                        
+        </form>
+    </body>
+</html>

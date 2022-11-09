@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura Base html5</title>
+        <meta name="author" content="Lucas Santos">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="Keywords" content="html5, tecnologia">
+        
+        <style>
+            div{
+                padding: 2%;
+                margin: 100px 2%;
+                border: 1px solid black;
+                width: 17%;
+                float: left;
+                height: 100px;
+                font-family: sans-serif;
+                font-size: 15px;
+            }
+
+            .div1{
+                overflow: visible; /*overflow padrão*/
+            }
+
+            .div2{
+                overflow: hidden; /*esconde o conteudo que passa da região*/
+            }
+
+            .div3{
+                overflow: scroll; /*bota o scroll no elemento*/
+            }
+
+            .div4{
+                overflow: auto; /*bota o scroll no elemento se for necessario*/
+            }
+
+        
+        </style>
+
+    </head>
+
+    <body>
+        <div class="div1">
+            <p>Lorem ipsum nullam semper tellus vehicula quisque
+            tortor euismod inceptos, iaculis per varius tempor 
+            arcu duis curabitur tortor quis, volutpat non orci 
+            urna habitant integer vehicula commodo. fames lorem 
+            scelerisque nec eros consectetur mi laoreet, sollicitudin
+            magna ipsum accumsan sed maecenas sagittis ut, elit gravida 
+            viverra pellentesque fusce consectetur. </p>    
+        </div>        
+
+        <div class="div2">
+            <p>Lorem ipsum nullam semper tellus vehicula quisque
+            tortor euismod inceptos, iaculis per varius tempor 
+            arcu duis curabitur tortor quis, volutpat non orci 
+            urna habitant integer vehicula commodo. fames lorem 
+            scelerisque nec eros consectetur mi laoreet, sollicitudin
+            magna ipsum accumsan sed maecenas sagittis ut, elit gravida 
+            viverra pellentesque fusce consectetur. </p>    
+        </div>        
+
+        <div class="div3">
+            <p>Lorem ipsum nullam semper tellus vehicula quisque
+            tortor euismod inceptos, iaculis per varius tempor 
+            arcu duis curabitur tortor quis, volutpat non orci 
+            urna habitant integer vehicula commodo. fames lorem 
+            scelerisque nec eros consectetur mi laoreet, sollicitudin
+            magna ipsum accumsan sed maecenas sagittis ut, elit gravida 
+            viverra pellentesque fusce consectetur. </p>    
+        </div>        
+
+        <div class="div4">
+            <p>Lorem ipsum nullam semper tellus vehicula quisque
+            tortor euismod inceptos, iaculis per varius tempor 
+            arcu duis curabitur tortor quis, volutpat non orci 
+            urna habitant integer vehicula commodo. fames lorem 
+            scelerisque nec eros consectetur mi laoreet, sollicitudin
+            magna ipsum accumsan sed maecenas sagittis ut, elit gravida 
+            viverra pellentesque fusce consectetur. </p>    
+        </div>        
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura Base html5</title>
+        <meta name="author" content="Lucas Santos">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="Keywords" content="html5, tecnologia">
+
+        <style>
+            .formlogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;
+            }
+
+            .formlogin fieldset{
+                background: #ccc;
+            }
+
+            .formlogin legend{
+                background: red;
+                display: inline-block;
+                padding: 10px;
+            }
+
+            #user, #password, .btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 8px;
+                font-size: 18px;
+                border: none;
+            }
+
+            #user:focus, #password:focus{
+                background: #ddd;
+            }
+
+            .formlogin label{
+                margin-top: 15px;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .btn{
+                margin-top: 13px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Exemplo de fromulario</h1>
+
+        <!-- GET manda as informações pela url -->
+        <!-- POST manda as informações junto com a 
+             requisição e de forma segura -->
+        <form action="#" method="POST" class="formlogin">
+
+            <fieldset>
+                <legend>Login</legend>
+
+                <label for="user">User:</label>
+                <input type="text" name="txtuser" id="user" autofocus> <!-- autofocus da o foco direto no campo quando a pagina é aberta -->
+
+                <label for="password">Password:</label>
+                <input type="password" name="txtpassword" id="password">
+                
+                <input type="submit" value="log in" class="btn">
+            </fieldset>
+        
+        </form>
+    </body>
+</html>

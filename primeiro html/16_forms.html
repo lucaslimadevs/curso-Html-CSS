@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao navegador a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura Base html5</title>
+        <meta name="author" content="Lucas Santos">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="Keywords" content="html5, tecnologia">
+    </head>
+
+    <body>
+        <h1>Exemplo de fromulario</h1>
+
+        <!-- GET manda as informações pela url -->
+        <!-- POST manda as informações junto com a 
+             requisição e de forma segura -->
+        <form action="http://google.com/search" method="get" target="_blank">
+
+            <label for="txtbusca">Faça uma busca</label>
+            <input type="text" name="q" id="txtbusca"> <!-- o input text precisa de um NAME, atraves do name "q" o google pega o valor do que esta escrito no input-->
+            <input type="submit" value="ok">
+        </form>
+    </body>
+</html>
